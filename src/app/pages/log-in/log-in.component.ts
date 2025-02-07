@@ -52,6 +52,7 @@ export class LogInComponent {
               localStorage.setItem('userToken', res.token);
 
               this.authService.saveData();
+              console.log(this.authService.saveData());
 
               this.router.navigate(['/home']);
             }, 500);
